@@ -1,0 +1,272 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="css/main.css">
+<!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+</head>
+
+<body>
+
+
+<style>
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  
+  /* Added css */
+  -webkit-perspective: border-box;
+	-moz-perspective: border-box;
+	-o-perspective: border-box;
+	-ms-perspective: border-box;
+	perspective:border-box
+}
+
+body { /* For full width image-container */
+  margin: 0 0 0 0;
+  
+  height:400px;
+  width:980px;
+}
+
+.tile {
+  width: 20%;
+  height: auto;
+  display: inline-block;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+  float: left;
+  padding: 0 0 19% 0;
+  background-position: center;
+  
+  
+}
+
+.image-title {
+  width: 100%;
+  height: 40%;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 1rem 1rem;
+  font-size: .855em;
+  /*font-family:"Helvetica"; */
+  font-family:"Century Gothic";
+  text-align: center;
+  line-height: 1em;
+  /*background-color: rgba(122, 206, 89, 0.9); */ 
+  background-color:white;
+  
+  
+  
+  /* Added css */
+  -webkit-background-color: #1B85B5;
+	-moz-background-color: #1B85B5;
+	-o-background-color: #1B85B5;
+	-ms-background-color: #1B85B5;
+}
+
+
+
+
+
+
+.tile .image-title {
+  transition: 0.8s ease;
+}
+
+
+/* Hover effect on image tiles */
+
+.tile:hover .image-title {
+  background-color: #1B85B5;
+  height: 100%;
+}
+
+
+/* Pop up CSS light box */
+
+
+
+/* Responsive tiles starts here. Breaking points: 1280, 1024, 600, 360 */
+
+@media screen and (max-width: 1280px) {
+  .image-container .tile {
+    width: 25%;
+    padding-bottom: 25%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .image-container .tile {
+    width: 33.33%;
+    padding-bottom: 33.33%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .image-container .tile {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-container .tile {
+    width: 50%;
+    padding-bottom: 50%;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .image-container .tile {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+}
+
+
+/* Added to check the responsive */
+
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+.img-responsive,
+.thumbnail a>img,
+.thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+
+/* Added css */
+h5{
+  
+  background-color:white;
+  
+}
+
+</style>
+
+
+
+<div class="image-container">
+	<div class="img-responsive">
+
+	   
+	    <div onclick="window.open('https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=16','_blank')" class="tile" style="background-image: url('img/1.png');  padding: 110px 3px 20px 3px; height:70px; width:190px; margin: 0px 3px; "   >
+		
+		<div class="image-title"><h5 style="color: #1B85B5; font-family: 'Century Gothic'; font-weight:bold; text-decoration: none;">LEADERSHIP</h5><br><br>		
+		  <a href = "https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=16" target="_blank"
+		  style = "color: white; text-decoration: none;">Management
+		Supervisory
+		related training.
+		</a></div>
+	   </div>
+	   
+	    <div onclick="window.open('https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=17','_blank')" class="tile" style="background-image: url('img/2.png');  padding: 110px 3px 20px 3px; height:70px; width:190px; margin: 0px 3px;">
+		<div class="image-title"><h5 style="color: #1B85B5; font-family: sans-serif, 'Century Gothic'; font-weight:bold; text-decoration: none; ">BUSINESS SKILLS</h5><br><br>		
+		  <a href = "https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=17" target="_blank"
+		  style = "color: white; text-decoration: none;">
+		  Day-to-Day
+		job outputs
+		</a></div>
+		</div>
+	  
+	   
+	   <div onclick="window.open('https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=23','_blank')" class="tile" style="background-image: url('img/8.png'); padding: 110px 3px 20px 3px; height:70px; width:190px; margin: 0px 3px;">
+		<div class="image-title"><h5 style="color: #1B85B5; font-family: sans-serif, 'Century Gothic'; font-weight:bold; text-decoration: none; ">B-BBEE</h5><br><br>
+				
+		<a href = "https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=23" target="_blank"
+		style = "color: white; text-decoration: none;">
+		  Various Elements
+		</a></div>
+	   </div>
+	  
+	   
+	   <div onclick="window.open('https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=22','_blank')" class="tile" style="background-image: url('img/7.png');  padding: 110px 3px 20px 3px; height:70px; width:190px;  margin: 0px 3px; ">
+       <div class="image-title"><h5 style="color: #1B85B5; font-family: sans-serif, 'Century Gothic'; font-weight:bold; text-decoration: none; ">HEALTH & SAFETY</h5><br><br>
+		
+       <a href = "https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=22" target="_blank"
+	 style = "color: white; text-decoration: none;">
+	 Legislation
+      </a></div>
+     </div>
+   
+	   
+	     <div onclick="window.open('https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=4','_blank')" class="tile" style="background-image: url('img/10.png'); padding: 110px 3px 20px 3px; height:70px; width:190px; margin: 0px 3px;">
+		<div class="image-title"><h5 style="color: #1B85B5; font-family: sans-serif, 'Century Gothic'; font-weight:bold; text-decoration: none; ">eSTUDY CONTENT</h5><br><br>		
+		  <a href = "https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=4" target="_blank"
+		  style = "color: white; text-decoration: none;">
+		  eSTUDY Documents
+		</a></div>
+	   </div>
+	   
+	   <br><br> 
+	  
+	   
+	   <div onclick="window.open('https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=21','_blank')" class="tile" style="background-image: url('img/6.png'); padding: 110px 3px 20px 3px; height:70px; width:190px;  margin: 3px 3px;">
+		<div class="image-title"><h5 style="color: #1B85B5; font-family: sans-serif, 'Century Gothic'; font-weight:bold; text-decoration: none; ">PERSONAL	
+		DEVELOPMENT</a></h5><br><br>
+			  <a href = "https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=21" target="_blank"
+			  style = "color: white; text-decoration: none;">
+			  Understanding/
+		Improving myself
+		Work Readiness
+		</a></div>
+	   </div>
+	  
+	   
+	   <div onclick="window.open('https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=19','_blank')" class="tile" style="background-image: url('img/4.png');  padding: 110px 3px 20px 3px; height:70px; width:190px;  margin: 3px 3px;">
+		<div class="image-title"><h5 style="color: #1B85B5 ; font-family: sans-serif, 'Century Gothic'; font-weight:bold; text-decoration: none; ">SALES &
+		MARKETING</a></h5><br><br>	
+			<a href = "https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=19" target="_blank"
+			style = "color: white; text-decoration: none;">
+			SM Operations
+		Legislation
+		</a></div>
+	   </div>
+	  	   
+	   <div onclick="window.open('https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=24','_blank')" class="tile" style="background-image: url('img/9.png'); padding: 110px 3px 20px 3px;  height:70px; width:190px; margin: 3px 3px;">
+		<div class="image-title"><h5 style="color: #1B85B5; font-family: sans-serif, 'Century Gothic'; font-weight:bold; text-decoration: none; ">INFORMATION
+		TECHNOLOGY</a></h5><br><br>		
+		<a href = "https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=24" target="_blank"	  
+			  style = "color: white; text-decoration: none;">
+			  Anything related to
+		computers
+		</a></div>
+		</div>
+	  	   
+	   <div onclick="window.open('https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=18','_blank')" class="tile" style="background-image: url('img/3.png');  padding: 110px 3px 20px 3px; height:70px; width:190px; margin: 3px 3px;">
+		<div class="image-title"><h5 style="color: #1B85B5; font-family: sans-serif, 'Century Gothic'; font-weight:bold; text-decoration: none; ">FINANCE &
+		INSURANCE</a></h5><br><br>		
+		<a href = "https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=18" target="_blank"
+		style = "color: white; text-decoration: none;">
+			  Operational Finance
+		Finance Legislation 
+		</a></div>
+	   </div>
+	  	   
+	    <div onclick="window.open('https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=20','_blank')" class="tile" style="background-image: url('img/5.png');  padding: 110px 3px 20px 3px; height:70px; width:190px;  margin: 3px 3px;">
+		<div class="image-title"><h5 style="color: #1B85B5; font-family: sans-serif, 'Century Gothic'; font-weight:bold; text-decoration: none; ">INDUSTRIAL/
+		EMPLOYEE RELATIONS</a></h5><br><br>		
+			  <a href = "https://estudy.eu.crossknowledge.com/site/search/results#context=training&lang=en&chapter=20" target="_blank"
+			  style = "color: white; text-decoration: none;">
+			  Human Resource
+		Function
+		Labour Law
+		</a></div>
+		</div>
+	  
+
+  </div>
+</div>     
+
+
+
+</body>
+</html>
